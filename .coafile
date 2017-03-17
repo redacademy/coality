@@ -1,0 +1,4 @@
+[Default]
+bears = SpaceConsistencyBear
+files = src/*.js
+use_spaces = yeah

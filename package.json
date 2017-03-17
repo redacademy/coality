@@ -1,0 +1,19 @@
+{
+  "name": "coality",
+  "version": "0.5.0",
+  "description": "Tool for quickly checking the quality of your code",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "RED Academy",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "coality": "src/runner.js"
+  },
+  "dependencies": {
+    "colour": "^0.7.1",
+    "shelljs": "^0.7.7"
+  }
+}
