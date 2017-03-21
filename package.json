@@ -15,5 +15,12 @@
   "dependencies": {
     "colour": "^0.7.1",
     "shelljs": "^0.7.7"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Blake Turner",
+      "email": "mail@blakewilliamturner.com",
+      "url": "https://github.com/BlakeTurner"
+    }
+  ]
 }
