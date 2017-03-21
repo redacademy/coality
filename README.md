@@ -4,7 +4,7 @@ Command-line tool for quickly and succinctly measuring the quality of your code,
 
 ## Installation
 
-Coality relies on (Coala)[https://github.com/coala/coala] and (HTML Tidy)[http://www.html-tidy.org/].
+Coality relies on [Coala](https://github.com/coala/coala) and [HTML Tidy](http://www.html-tidy.org/).
 
 Install Coala:
 
