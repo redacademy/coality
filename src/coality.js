@@ -7,7 +7,8 @@ const { parseData, generateErrorLocation } = require('./parser');
 const runCoality = () => {
   shell.exec(`coala --json`, {async:true, silent:true}, function(code, stdout, stderr) {
     console.log();
-    console.log('CSS/JS:');
+    console.log('Coala Output:');
+    console.log();
 
     const parsed = parseData(stdout);
 

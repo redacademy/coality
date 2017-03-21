@@ -6,8 +6,11 @@ require('colour');
 // options is optional
 const runTidyHtml = () => {
   glob("**/*.html", { ignore: 'node_modules/**' }, function (er, files) {
+    if (!files.length) return;
+
     console.log();
-    console.log('HTML:');
+    console.log('HTML Tidy Output:');
+    console.log();
 
     files.forEach((fileName) => {
       shell.exec(`tidy -e ${fileName}`, {async:true, silent:true}, (code, stdout, stderr) => {
