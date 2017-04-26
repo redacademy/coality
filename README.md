@@ -53,6 +53,16 @@ HTML is validated using HTML Tidy, so you don't need to add and HTML configurati
 
 Be sure that you don't lint `node_modules`!
 
+## Suggested RC Files
+
+For linting CSS, we suggest adding this `.csslintrc` file to your project:
+
+```json
+{
+  "unique-headings": false
+}
+```
+
 ## Usage
 
 In your project, simply run:
