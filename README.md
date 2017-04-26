@@ -19,55 +19,30 @@ Install HTML Tidy:
 brew install tidy-html5
 ```
 
-CSS and JS validations use global node packages:
-
-```sh
-npm install -g eslint csslint
-```
-
 Install Coality:
 
 ```sh
-npm install -g coality
-```
-
-## Configuration
-
-Coality requires a `.coafile` in the root directory of your project.
-
-Example:
-
-```
-[Javascript]
-bears = ESLintBear, SpaceConsistencyBear
-files = js/*.js
-use_spaces = True
-
-[CSS]
-bears = CSSLintBear, SpaceConsistencyBear
-files = styles/*.css
-use_spaces = True
-```
-
-HTML is validated using HTML Tidy, so you don't need to add and HTML configuration to your `.coafile`. The only thing you will need to tweak is the `files` parameter.
-
-Be sure that you don't lint `node_modules`!
-
-## Suggested RC Files
-
-For linting CSS, we suggest adding this `.csslintrc` file to your project:
-
-```json
-{
-  "unique-headings": false
-}
+npm install --save-dev coality
 ```
 
 ## Usage
 
-In your project, simply run:
+Add a coality script to your `package.json`
+
+```json
+{
+  ...
+  "scripts": {
+    "coality": "coality"
+  }
+  ...
+}
+
+```
+
+Then run:
 
 ```sh
-coality
+npm run coality
 ```
 

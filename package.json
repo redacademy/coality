@@ -1,9 +1,9 @@
 {
   "name": "coality",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Tool for quickly checking the quality of your code",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node src/post-install"
   },
   "keywords": [],
   "author": "RED Academy",
@@ -13,7 +13,10 @@
     "coality": "src/runner.js"
   },
   "dependencies": {
+    "app-root-path": "^2.0.1",
     "colour": "^0.7.1",
+    "csslint": "^1.0.5",
+    "eslint": "^3.19.0",
     "shelljs": "^0.7.7"
   },
   "contributors": [
